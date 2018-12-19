@@ -1,0 +1,123 @@
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    width: 80vw;
+    height: 200px;
+    background: red;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+/* .box:hover {
+    opacity: 0.5;
+} */
+
+.box h1 {
+   color: red;
+
+    
+    transition: 0.5s;
+}
+.box h1:hover  {
+    color: black;
+    cursor: progress;
+}
+    /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.336); */
+    /* animation-name: change 5s ease-in-out 0 infinite forwards; */
+    /* animation-duration: 3s;
+    background: lightsteelblue;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+
+/* keyframes */
+
+/* @keyframes change {
+    0% {
+        width: 1000px;
+        background: blue;
+        box-shadow: none;
+    }
+    
+/*  
+    50% {
+        background: orange;
+        box-shadow: none;
+    }
+    62.5% {
+        background: hotpink;
+    }
+    75% {
+        background: purple;
+    }
+    87.5% {
+        background: hotpink;
+    }
+     */
+
+/*  
+    100% {
+        width: 500px;
+        height: 200px;
+        background: rgb(0, 212, 0);
+        border-radius: 10px;
+    }
+} */
+
+/* transitions and transfromations */
+
+
+
+/* Media Queries */
+
+@media (max-width: 1099px ) and (min-width: 991px ){
+    .box {
+        transform: translateX(10px) rotate(10deg) ;
+        background: seagreen;
+    }
+} 
+
+@media (max-width: 990px) and (min-width: 700px) {
+    .box {
+        transform: translateX(10px) rotate(15deg) ;
+        background: yellow;
+    }
+}
+
+@media (max-width: 699px) and (min-width: 500px) {
+    .box {
+        transform: translateX(10px) rotate(20deg) ;
+        background: blue;
+    }
+}
+@media (max-width: 499px) {
+    .box {
+        background: orange;
+        /* transform: rotateX(10deg) */
+        transform: translateX(10px) rotate(25deg) ;
+
+    }
+} 
+
+
+
+
+
+
+
+
+
